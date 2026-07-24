@@ -1,0 +1,133 @@
+<style>
+  .navbar-brand i {
+    color: #fe424d;
+    font-size: 1.8rem;
+  }
+
+  .search-btn {
+    background-color: #fe424d;
+    color: white;
+    border-radius: 25px;
+    padding: 0 1rem;
+  }
+
+  .search-btn:hover {
+    background-color: #fe424d;
+    color: white;
+  }
+
+  .search-input {
+    border-radius: 25px;
+    padding: 0.7rem 3rem;
+    font-size: 0.9rem;
+  }
+
+  .search-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .search-wrapper form {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  /*  Mobile Search */
+  .mobile-search {
+    display: none;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .mobile-search form {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  @media (max-width: 991px) {
+    .mobile-search {
+      display: flex !important;
+    }
+    .desktop-auth {
+      display: none !important;
+    }
+    #filters {
+      display: none !important;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .mobile-search {
+      display: none !important;
+    }
+  }
+</style>
+
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+  <div class="container-fluid">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="/listings">
+      <i class="fa-regular fa-compass"></i>
+    </a>
+
+    <!--  Mobile Search  -->
+    <div class="mobile-search">
+      <form class="d-flex" role="search" action="/listings" method="GET">
+        <input class="form-control me-2 search-input" type="search" name="search" placeholder="Search destinations...">
+        <button class="btn search-btn" type="submit">Search</button>
+      </form>
+    </div>
+
+    <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Desktop Navbar -->
+    <div class="collapse navbar-collapse d-none d-md-flex">
+      <div class="navbar-nav">
+        <a class="nav-link" href="/listings">Explore</a>
+      </div>
+
+      <!-- Center Search (Desktop) -->
+      <div class="search-wrapper mx-auto">
+        <form class="d-flex" role="search" action="/listings" method="GET">
+          <input class="form-control me-2 search-input" type="search" name="search" placeholder="Search destinations...">
+          <button class="btn search-btn" type="submit">Search</button>
+        </form>
+      </div>
+
+      <div class="navbar-nav ms-auto desktop-auth">
+        <a class="nav-link" href="/listings/new">HeavenHub Your Home</a>
+        <% if(!currentUser){ %>
+          <a class="nav-link" href="/signup"><b>Sign Up</b></a>
+          <a class="nav-link" href="/login"><i class="fa-regular fa-circle-user"></i> <b>Log In</b></a>
+        <% } else { %>
+          <a class="nav-link" href="/logout"><b>Logout</b></a>
+        <% } %>
+      </div>
+    </div>
+
+    <!-- Mobile Offcanvas -->
+    <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="offcanvasNavbar">
+      <div class="offcanvas-header">
+        <h1>HeavenHub</h1>
+        <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="navbar-nav">
+          <a class="nav-link" href="/listings">Explore</a>
+          <a class="nav-link" href="/listings/new">HeavenHub Your Home</a>
+        </div>
+        <% if(!currentUser){ %>
+          <a class="nav-link" href="/signup"><b>Sign Up</b></a>
+          <a class="nav-link" href="/login"><b>Log In</b></a>
+        <% } else { %>
+          <a class="nav-link" href="/logout"><b>Logout</b></a>
+        <% } %>
+      </div>
+    </div>
+
+  </div>
+</nav>
