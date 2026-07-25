@@ -1,6 +1,6 @@
 # HeavenHub
 
-A full-stack web application for browsing, creating, editing, and reviewing travel listings.
+A full-stack web application for browsing, creating, editing, and reviewing travel listings.Built with Node.js and Express, it provides a seamless experience for browsing, creating, and managing travel accommodations.
 
 ## Features
 
@@ -8,28 +8,25 @@ User Authentication - Secure login/signup with Passport.js
 - Listings Management - Full CRUD operations for travel listings
 - Review System - Add, edit, and manage reviews for listings
 - Owner Authorization - Only listing owners can edit or delete their listings
-- Image Upload - Add images to showcase your listings
-- Flash Messages - Instant feedback for user actions
-- Responsive Design - Mobile-friendly interface
 - MongoDB Atlas - Cloud database for reliable data storage
 
 
 ## Tech Stack
 
  # Backend
-Node.js - JavaScript runtime environment
-Express.js - Web application framework
-MongoDB - NoSQL database
-Mongoose - MongoDB ODM for schema modeling
-Passport.js - Authentication middleware
+-Node.js - JavaScript runtime environment
+-Express.js - Web application framework
+-MongoDB - NoSQL database
+-Mongoose - MongoDB ODM for schema modeling
+-Passport.js - Authentication middleware
 
 # Frontend
-EJS - Embedded JavaScript templating
-Bootstrap 5 - Responsive CSS framework
-CSS3 - Custom styling and animations
+-EJS - Embedded JavaScript templating
+-Bootstrap 5 - Responsive CSS framework
+-CSS3 - Custom styling and animations
 
  # Development
-Nodemon - Auto-restart during development
+-Nodemon - Auto-restart during development
 
 
 
