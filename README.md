@@ -4,12 +4,15 @@ A full-stack web application for browsing, creating, editing, and reviewing trav
 
 ## Features
 
--User Authentication - Secure login/signup with Passport.js
-Listings Management - Full CRUD operations for travel listings
-Review System - Add, edit, and manage reviews for listings
-Owner Authorization - Only listing owners can edit or delete their listings
-MongoDB Atlas - Cloud database for reliable data storage
-Session Management - Secure session handling with cookies
+User Authentication - Secure login/signup with Passport.js
+- Listings Management - Full CRUD operations for travel listings
+- Review System - Add, edit, and manage reviews for listings
+- Owner Authorization - Only listing owners can edit or delete their listings
+- Image Upload - Add images to showcase your listings
+- Flash Messages - Instant feedback for user actions
+- Responsive Design - Mobile-friendly interface
+- MongoDB Atlas - Cloud database for reliable data storage
+
 
 ## Tech Stack
 
