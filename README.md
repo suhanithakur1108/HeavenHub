@@ -14,19 +14,19 @@ User Authentication - Secure login/signup with Passport.js
 ## Tech Stack
 
  # Backend
--Node.js - JavaScript runtime environment
--Express.js - Web application framework
--MongoDB - NoSQL database
--Mongoose - MongoDB ODM for schema modeling
--Passport.js - Authentication middleware
+- Node.js - JavaScript runtime environment
+- Express.js - Web application framework
+- MongoDB - NoSQL database
+- Mongoose - MongoDB ODM for schema modeling
+- Passport.js - Authentication middleware
 
 # Frontend
--EJS - Embedded JavaScript templating
--Bootstrap 5 - Responsive CSS framework
--CSS3 - Custom styling and animations
+- EJS - Embedded JavaScript templating
+- Bootstrap 5 - Responsive CSS framework
+- CSS3 - Custom styling and animations
 
  # Development
--Nodemon - Auto-restart during development
+- Nodemon - Auto-restart during development
 
 
 
